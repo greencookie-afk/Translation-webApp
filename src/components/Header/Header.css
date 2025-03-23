@@ -1,0 +1,25 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121826;
+    padding: 10px 30px;
+    color: white;
+    border-bottom: 0.5px solid rgb(80, 80, 80);
+}
+
+.side-bar {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.icon-button,
+.q-circle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+}
