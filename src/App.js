@@ -7,13 +7,17 @@ import './App.css';
 
 const App = () => {
   const [rightPanelView, setRightPanelView] = useState('history');
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   return (
     <div className="app">
-      <Header />
+      <Header toggleSidebar={() => setIsSidebarVisible(!isSidebarVisible)} />
       <div className="app-container">
         <div className="sidebar-container">
-          <Sidebar setRightPanelView={setRightPanelView} />
+          <Sidebar
+          setRightPanelView={setRightPanelView}
+          isVisible={isSidebarVisible}
+          closeSidebar={() => setIsSidebarVisible(false)} />
         </div>
         <div className="voice-panel-container">
           <VoiceTranslationPanel />

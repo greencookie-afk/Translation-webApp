@@ -1,12 +1,12 @@
-import React from 'react'
-import "./Sidebar.css"
+import React from 'react';
+import "./Sidebar.css";
 
-const Sidebar = ({ setRightPanelView }) => {
+const Sidebar = ({ setRightPanelView, isVisible, closeSidebar }) => {
     return (
-        <div className="sidebar">
-            <button className='history-btn' onClick={() => setRightPanelView('history')}>History</button>
-            <button className='settings-btn' onClick={() => setRightPanelView('settings')}>Settings</button>
-            <button className='contact-btn' onClick={() => setRightPanelView('contact us')}>Contact Us</button>
+        <div className={`sidebar ${isVisible ? 'visible' : ''}`}>
+            <button className='history-btn' onClick={() => { setRightPanelView('history'); closeSidebar(); }}>History</button>
+            <button className='settings-btn' onClick={() => { setRightPanelView('settings'); closeSidebar(); }}>Settings</button>
+            <button className='contact-btn' onClick={() => { setRightPanelView('contact us'); closeSidebar(); }}>Contact Us</button>
         </div>
     );
 };

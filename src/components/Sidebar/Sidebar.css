@@ -7,6 +7,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.visible {
+    transform: translateX(0);
 }
 
 .sidebar button {
@@ -14,6 +20,7 @@
     background-color: #111;
     color: white;
     cursor: pointer;
+    font-family: inter;
 }
 
 

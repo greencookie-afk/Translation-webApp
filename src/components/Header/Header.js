@@ -4,11 +4,11 @@ import { CgProfile } from "react-icons/cg";
 import { BsQuestionCircle } from "react-icons/bs";
 import "./Header.css";
 
-const header = () => {
+const header = ({toggleSidebar}) => {
     return (
         <header className="app-header">
             {/* sidebar */}
-            <button className='side-bar'>
+            <button className='side-bar' onClick={toggleSidebar}>
                 <FaBarsStaggered size={20} />
             </button>
 
