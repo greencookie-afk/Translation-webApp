@@ -1,24 +1,20 @@
 import React from 'react';
-import { FaBarsStaggered } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
 import { BsQuestionCircle } from "react-icons/bs";
 import "./Header.css";
 
-const header = ({toggleSidebar}) => {
+const header = () => {
     return (
         <header className="app-header">
-            {/* sidebar */}
-            <button className='side-bar' onClick={toggleSidebar}>
-                <FaBarsStaggered size={20} />
-            </button>
-
-            {/* Right Side */}
+            <div className="logo">
+                <span>Speak</span>Easy
+            </div>
             <div className='right-icons'>
                 <button className="q-circle">
-                    <BsQuestionCircle size={20} />
+                    <BsQuestionCircle size={25} />
                 </button>
                 <button className="icon-button">
-                    <CgProfile size={20} />
+                    <CgProfile size={25} />
                 </button>
             </div>
         </header>

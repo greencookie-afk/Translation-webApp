@@ -2,16 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #121826;
-    padding: 10px 30px;
+    background-color: #1a1a1a;
+    padding: 20px 30px;
     color: white;
     border-bottom: 0.5px solid rgb(80, 80, 80);
-}
-
-.side-bar {
-    background-color: transparent;
-    border: none;
-    color: white;
 }
 
 .icon-button,
@@ -22,4 +16,15 @@
     cursor: pointer;
     padding: 5px;
     font-size: 18px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    font-family: montserrat;
+}
+
+.logo span {
+    color: #7c61f5;
 }

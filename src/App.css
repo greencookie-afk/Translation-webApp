@@ -4,17 +4,4 @@
     height: 100vh;
 }
 
-.app-container {
-    display: flex;
-    flex: 1;
-}
-
-.voice-panel-container {
-    flex: 1;
-    background-color: #0e101d;
-}
-
-.right-panel-container {
-    width: 300px;
-    background-color: #000000;
-}
+/* Removed app-container, voice-panel-container, and right-panel-container styles */

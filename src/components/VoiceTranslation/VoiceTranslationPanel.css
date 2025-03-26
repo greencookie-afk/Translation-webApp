@@ -1,3 +1,74 @@
 .voice-translation-panel {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    position: relative;
     padding: 20px;
+}
+
+
+.translation-display {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.voice-translation-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.voice-input-button {
+    color: rgb(119, 71, 250);
+    border: none;
+    font-size: 140px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.voice-input-button:hover {
+    transform: scale(1.05);
+    color: rgb(94, 37, 255);
+}
+
+.voice-input-button.active {
+    color: #3adb8a;
+}
+
+.container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3adb8a;
+}
+
+@media screen and (max-width: 768px) {
+    .voice-translation-panel {
+        padding: 10px;
+    }
+
+    .voice-input-button {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .voice-input-button {
+        font-size: 80px;
+    }
 }
