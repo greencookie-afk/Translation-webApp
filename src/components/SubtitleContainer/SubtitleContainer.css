@@ -1,0 +1,31 @@
+.subtitle-container {
+    background-color: #06060C;
+    padding: 30px;
+    margin: 0;
+    border: 0.5px solid rgba(255, 255, 255, 0.123);
+    border-radius: 50px;
+    text-align: left;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.original-text {
+    font-family: inter, sans-serif;
+    font-size: 1.8rem;
+    font-weight: light;
+    color: #dddddd;
+    margin-bottom: 10px;
+}
+
+.translated-text {
+    font-family: inter, sans-serif;
+    font-weight:800;
+    font-size: 1.8rem;
+    background: linear-gradient(180deg, #B199FA 50%, #292197 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

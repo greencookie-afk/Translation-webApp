@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './components/Header/Header';
 import VoiceTranslationPanel from './components/VoiceTranslation/VoiceTranslationPanel';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
   return (
     <div className="app">
-      <Header />
+      <Navbar />
       <VoiceTranslationPanel />
     </div>
   );
